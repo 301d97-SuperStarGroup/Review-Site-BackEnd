@@ -1,0 +1,2 @@
+PORT=<port of your choice>
+DB_URL=mongodb+srv://<USERNAME>:<password>@reviewsitecluster.8ds2w2h.mongodb.net/<COLLECTION_NAME>?retryWrites=true&w=majority
