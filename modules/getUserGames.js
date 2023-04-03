@@ -6,9 +6,9 @@ async function getUserGames(request, response, next) {
     let genre = request.params.gameGenre;
     console.log('genre is: ', genre);
 
-    const updatedGameDataByGenre = await Game.find({genre});
+    const updatedGameDataByUser = await Game.find({ email: request.user.email});
 
-    response.status(200).send(updatedGameDataByGenre);
+    response.status(200).send(updatedGameDataByUser);
 
   } catch (error) {
     next(error);

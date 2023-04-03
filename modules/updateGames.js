@@ -7,11 +7,11 @@ async function updateGames(request, response, next){
     let id = request.params.gameID;
     let data = request.body;
 
-    const updatedGame = await Game.findByIdAndUpdate(id, data, {new: true, overwrite: true } );
+    const updatedGame = await Game.findByIdAndUpdate(id, {...request.body, email:request.user.email}, data, {new: true, overwrite: true } );
 
     response.status(200).send(updatedGame);
 
-    //ID - the cat to update, DATA - the information to update the book with
+    //ID - the game to update, DATA - the information to update the book with
   } catch (error) {
     next (error);
   }

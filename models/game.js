@@ -13,6 +13,7 @@ const gameSchema = new Schema ({
   platform: { type: String, required: true },
   playStatus: { type: Boolean, required: true },
   reviewNotes: { type: String, required: true },
+  email: String
 });
 
 const Game = mongoose.model('game', gameSchema);
