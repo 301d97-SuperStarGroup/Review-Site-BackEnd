@@ -4,6 +4,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const verifyUser = require('./auth');
 const getAllGames = require('./modules/getAllGames');
 const postGames = require('./modules/postGames');
 const deleteGames = require('./modules/deleteGames.js');
@@ -12,7 +13,7 @@ const getUserGames = require('./modules/getUserGames.js');
 
 const app = express();
 app.use(cors());
-
+app.use(verifyUser); //codefellows middleware
 app.use(express.json());
 
 // define PORT validate env is working
