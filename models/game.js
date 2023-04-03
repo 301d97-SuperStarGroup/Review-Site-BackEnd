@@ -11,8 +11,8 @@ const gameSchema = new Schema ({
   releaseDate: { type: String, required: true },
   genre: { type: String, required: true },
   platform: { type: String, required: true },
-  playStatus: { type: Boolean, required: true },
-  reviewNotes: { type: String, required: true },
+  playStatus: Boolean,
+  reviewNotes: String,
   email: String
 });
 
