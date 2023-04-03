@@ -20,7 +20,7 @@ async function getUserGames(request, response, next) {
 // let key = `${keywordFromFrontEnd}- Game`;
 
 
-// using games filtered by user at the front end, call to the mongo database and pull requested data - this is a seaparate endpoint from getAllGames. et all games and send to front end and let user filter; this is from the game API
+// using games filtered by user at the front end, call to the mongo database and pull requested data - this is a separate endpoint from getAllGames. et all games and send to front end and let user filter; this is from the game API
 
 
 // 2) when we know what we want to map through, take the api data and do some placeholder seeds with the api data to make sure the api call is functioning before moving on to the other endpoints.

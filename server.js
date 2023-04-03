@@ -34,12 +34,12 @@ db.once('open', function () {
 });
 
 
-
-// *** ENDPOINT TO RETREIVE ALL GAMES FROM MY DATABASE ***
+//** ENDPOINT TO PULL GAMES FROM GAME API */
 app.get('/games', getAllGames);
 
 
-app.get('/games/:gameGenre', getUserGames);
+// *** ENDPOINT TO RETRIEVE ALL GAMES SAVED TO MY DATABASE ***
+app.get('/myGames', getUserGames);
 
 
 app.delete('/games/:gameID', deleteGames);
