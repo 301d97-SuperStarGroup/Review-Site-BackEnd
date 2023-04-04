@@ -10,7 +10,6 @@ const gameSchema = new Schema ({
   thumbnail: { type: String, required: true }, //"thumbnail": "https://www.freetogame.com/g/540/thumbnail.jpg",
   short_description: {type: String, required: true },
   genre: { type: String, required: true },
-  platform: { type: String, required: true },
   freetogame_profile_url: {type: String, required: true},
   playStatus: Boolean,
   reviewNotes: String,
