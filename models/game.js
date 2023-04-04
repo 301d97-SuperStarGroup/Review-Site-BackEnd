@@ -12,9 +12,9 @@ const gameSchema = new Schema ({
   genre: { type: String, required: true },
   platform: { type: String, required: true },
   freetogame_profile_url: {type: String, required: true},
-  playStatus: { type: Boolean, required: true },
-  reviewNotes: {type: String, required: true },
-  email: {type: String, required: true},
+  playStatus: Boolean,
+  reviewNotes: String,
+  email: String
 });
 
 const Game = mongoose.model('game', gameSchema);
