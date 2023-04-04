@@ -43,12 +43,15 @@ async function getAllGames(request, response, next) {
 
 class Game {
   constructor(gameObj) {
+    this.id = gameObj.id;
     this.title = gameObj.title;
-    this.developer = gameObj.developer;
-    this.publisher = gameObj.publisher;
-    this.releaseDate = gameObj.release_date;
+    this.thumbnail = gameObj.thumbnail;
+    this.short_description = gameObj.short_description;
     this.genre = gameObj.genre;
-    this.platform = gameObj.platform;
+    this.freetogame_profile_url = gameObj.freetogame_profile_url;
+    this.play_status = gameObj.play_status;
+    this.review_notes = gameObj.review_notes;
+    this.email = gameObj.email;
   }
 }
 
