@@ -22,7 +22,6 @@ async function seed() {
 
   });
 
-  console.log('COD WARZONE 2 was added!');
 
   await Game.create({
     title: 'Rocket League',

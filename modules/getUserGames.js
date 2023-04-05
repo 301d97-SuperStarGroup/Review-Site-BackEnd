@@ -3,8 +3,6 @@ const Game = require('../models/game.js');
 
 async function getUserGames(request, response, next) {
   try {
-    let genre = request.params.gameGenre;
-    console.log('genre is: ', genre);
 
     const updatedGameDataByUser = await Game.find({ email: request.user.email});
 
