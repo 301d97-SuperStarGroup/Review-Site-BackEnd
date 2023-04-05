@@ -2,7 +2,7 @@
 
 const Game = require('../models/game.js');
 
-async function deleteOneGame(request, response, next) {
+async function deleteGame(request, response, next) {
   try {
     let id = request.params.gameID;
     await Game.findByIdAndDelete(id);
@@ -15,4 +15,4 @@ async function deleteOneGame(request, response, next) {
 
 }
 
-module.exports = deleteOneGame;
+module.exports = deleteGame;
