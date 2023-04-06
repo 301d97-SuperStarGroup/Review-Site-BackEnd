@@ -6,10 +6,8 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const verifyUser = require('./auth');
 const getAllGames = require('./modules/getAllGames');
-
 const postReviews = require('./modules/postReviews');
 const deleteGame = require('./modules/deleteGame.js');
-
 const updateGames = require('./modules/updateGames.js');
 const getUserGames = require('./modules/getUserGames.js');
 
