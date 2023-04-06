@@ -7,7 +7,7 @@ async function updateGames(request, response, next){
     let id = request.params.gameID;
     let data = request.body;
 
-    const updatedGame = await Game.findByIdAndUpdate(id, {...request.body, email:request.user.email}, data, {new: true, overwrite: true } ); //ignore the linter, its dumb
+    const updatedGame = await Game.findByIdAndUpdate(id, data, {new: true, overwrite: true } ); //ignore the linter, its dumb
 
     response.status(200).send(updatedGame);
 
