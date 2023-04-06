@@ -7,7 +7,11 @@ const mongoose = require('mongoose');
 const verifyUser = require('./auth');
 const getAllGames = require('./modules/getAllGames');
 
+<<<<<<< HEAD
 const postGames = require('./modules/postGames');
+=======
+const postReviews = require('./modules/postReviews');
+>>>>>>> c1e0026b2c461cf84c5c2102306161b983934481
 const deleteGame = require('./modules/deleteGame.js');
 
 const updateGames = require('./modules/updateGames.js');
@@ -44,7 +48,10 @@ app.get('/games', getAllGames);
 app.get('/myGames', getUserGames);
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c1e0026b2c461cf84c5c2102306161b983934481
 app.delete('/games/:gameID', deleteGame);
 
 
