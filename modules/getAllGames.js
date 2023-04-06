@@ -19,7 +19,7 @@ async function getAllGames(request, response, next) {
 
       let url = `https://www.freetogame.com/api/games`; // get all games and send to front end and let user filter; this is from the game API
 
-      // create something like userGames to then  // this will call to mongo to pull the data, with a separate endpoint. app.get for api call and app.get to get mongo db data. 
+      // create something like userGames to then  // this will call to mongo to pull the data, with a separate endpoint. app.get for api call and app.get to get mongo db data.
 
       // 1) set up endpoint to get everything from the api
       // 2) when we know what we want to map through, take the api data and do some placeholder seeds with the api data to make sure the api call is functioning before moving on to the other endpoints.
