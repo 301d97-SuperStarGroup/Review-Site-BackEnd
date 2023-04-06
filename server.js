@@ -6,7 +6,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const verifyUser = require('./auth');
 const getAllGames = require('./modules/getAllGames');
-const postGames = require('./modules/postGames');
+const postReviews = require('./modules/postReviews');
 const deleteOneGame = require('./modules/deleteOneGame.js');
 const updateGames = require('./modules/updateGames.js');
 const getUserGames = require('./modules/getUserGames.js');
@@ -45,7 +45,7 @@ app.get('/myGames', getUserGames);
 app.delete('/games/:gameID', deleteOneGame);
 
 
-app.post('/games', postGames);
+app.post('/games', postReviews);
 
 
 app.put('/games/:gameID', updateGames);
